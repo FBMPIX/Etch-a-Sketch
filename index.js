@@ -9,7 +9,7 @@ container.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`;
 
 div.style.height = `${860/gridSize}px`;
 div.style.width = `${860/gridSize}px`;
-div.style.border = '1px solid rgba(209, 81, 235, 1)';
+div.style.border = '1px solid black';
 div.style.backgroundColor = 'white';
 
 function fillGrid() {
