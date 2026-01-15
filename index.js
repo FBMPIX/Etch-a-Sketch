@@ -24,14 +24,14 @@ function fillGrid() {
 
 fillGrid();
 
-resetButton.addEventListener('click', () => {
+resetButton.addEventListener('mouseover', () => {
     const squares = document.querySelectorAll('#gridspace div');
     squares.forEach((square) => {
         square.style.backgroundColor = 'white';
     });
 });
 
-resizeButton.addEventListener('mouseover', () => {
+resizeButton.addEventListener('click', () => {
     let newSize = prompt("Enter new grid size (max 100): ");
     if (newSize !== null) {
         newSize = parseInt(newSize);
