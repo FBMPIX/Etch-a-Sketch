@@ -31,7 +31,7 @@ resetButton.addEventListener('click', () => {
     });
 });
 
-resizeButton.addEventListener('click', () => {
+resizeButton.addEventListener('mouseover', () => {
     let newSize = prompt("Enter new grid size (max 100): ");
     if (newSize !== null) {
         newSize = parseInt(newSize);
