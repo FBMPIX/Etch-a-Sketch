@@ -15,7 +15,7 @@ div.style.backgroundColor = 'white';
 function fillGrid() {
     for (let i = 0; i < gridSize * gridSize; i++) {
         const square = div.cloneNode(true);
-        square.addEventListener('click', () => {
+        square.addEventListener('mouseover', () => {
             square.style.backgroundColor = 'black';
         });
         container.appendChild(square);
@@ -24,7 +24,7 @@ function fillGrid() {
 
 fillGrid();
 
-resetButton.addEventListener('mouseover', () => {
+resetButton.addEventListener('click', () => {
     const squares = document.querySelectorAll('#gridspace div');
     squares.forEach((square) => {
         square.style.backgroundColor = 'white';
